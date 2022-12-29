@@ -1,5 +1,168 @@
 @import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
 
+body {
+    background-color: #1e1e1e;
+    background-image:  linear-gradient(#2d2d2d 2px, transparent 2px), linear-gradient(90deg, #2d2d2d 2px, transparent 2px), linear-gradient(#2d2d2d 1px, transparent 1px), linear-gradient(90deg, #2d2d2d 1px, #242424 1px);
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.break-flexbox {
+    flex-basis: 100%;
+  }
+
+
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 20px;
+    right: 90px;
+    padding: 10px;
+    background-color: rgb(43, 43, 43);
+    color: black;
+}
+
+.social-button {
+    background-color: #00000000;
+}
+
+.icon {
+    color: rgb(31, 28, 28);
+    font-size: 35px;
+}
+
+.icon:hover {
+    color: rgb(133, 133, 133);
+}
+
+
+
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    margin-bottom: 600px;
+}
+
+.maintext {
+    color: white;
+    font-size: 350%;
+    text-shadow: 5px 5px 5px #6a6a6a4d;
+    font-family: 'Prosto One', Arial, Helvetica, sans-serif;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+.button-style {
+    text-decoration: none;
+    background-color: #00000000;
+    border: none
+}
+
+.button {
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.10s;
+    cursor: pointer;
+    border: 2px solid #ffffff15;
+    background-color: #1e1e1e00;
+    font-family: 'Prosto One', cursive;
+}
+
+.button:hover {
+    background-color: #383838a0;
+}
+
+@media (min-width: 642px) {
+    .main {
+        margin-left: 297px;
+        margin-top: 305px;
+    }
+}
+
+@media (max-width: 642px) {
+    .main {
+        margin-left: 10px
+    }
+}
+
+
+
+
+
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-title {
+    font-family: 'Prosto One', cursive;
+    color: white;
+    font-size: 47px;
+    text-shadow: 5px 5px 5px #6a6a6a4d;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.about-text {
+    color: white;
+    font-family: 'Prosto One', cursive;
+}
+
+@media (min-width: 642px) {
+    #about {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-title {
+    font-family: 'Prosto One', cursive;
+    color: white;
+    font-size: 47px;
+    text-shadow: 5px 5px 5px #6a6a6a4d;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media (min-width: 642px) {
+    #projects {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+}
+
+
+
+
+
+
+
 ::-webkit-scrollbar {
     width: 8px;
   }
@@ -20,152 +183,76 @@
 
 
 
-body {
-    background-color: #1e1e1e;
-    background-image:  linear-gradient(#2d2d2d 2px, transparent 2px), linear-gradient(90deg, #2d2d2d 2px, transparent 2px), linear-gradient(#2d2d2d 1px, transparent 1px), linear-gradient(90deg, #2d2d2d 1px, #242424 1px);
-    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
-    margin-bottom: 2000px;
-    margin-left: 100px;
-}
 
 
-.maintext {
-    margin-left: 10%;
-    color: white;
+
+  .arrows {
+    width: 60px;
+    height: 72px;
     position: absolute;
-    bottom: 55%;
-    font-size: 350%;
-    text-shadow: 5px 5px 5px #6a6a6a4d;
-    font-family: 'Prosto One', cursive;
-    transition-duration: 0.10s;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #b8b8b8;
+    fill: transparent;
+    stroke-width: 1px;	
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+    animation-delay:-1s;
+    -webkit-animation-delay:-1s;
+}
+
+.arrows path.a2 {
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s;
+}
+
+.arrows path.a3 {	
+    animation-delay:0s;
+    -webkit-animation-delay:0s;
 }
 
 
-        .button {
-            border: none;
-            padding: 16px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            transition-duration: 0.10s;
-            cursor: pointer;
-            color: white; 
-            border: 2px solid #ffffff15;
-            background-color: #1e1e1e00;
-            position: absolute;
-            
-        }
 
-        .button:hover {
-            background-color: #383838a0;
-        }
+#topbutton {
+    display: none;
+    position: fixed;
+    bottom: 23.5px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    width: 50px;
+  }
 
-
-        .buttons {
-            display: grid;
-            grid-template-columns: 165px 154px 1fr;
-            column-gap: 1px;
-            margin-left: 200px;
-        }
-
-        .second {
-            position: absolute;
-            top: 46%;
-        }
-
-
-        .about-text {
-            position: absolute;
-            top: 80%;
-            color: white;
-            font-family: 'Prosto One', cursive;
-            margin-right: -1500px;
-        }
-
-
-
-        #about {
-            position: absolute;
-            top: 111%;
-            margin-left: 10%;
-        }
-
-        .about-title {
-            font-family: 'Prosto One', cursive;
-            color: white;
-            font-size: 47px;
-            text-shadow: 5px 5px 5px #6a6a6a4d;
-            text-decoration: underline;
-            font-weight: bold;
-        }
-
-        #projects {
-            position: absolute;
-            margin-left: 10%;
-            top: 130%;
-        }
-
-        .projects-title {
-            font-family: 'Prosto One', cursive;
-            color: white;
-            font-size: 47px;
-            text-shadow: 5px 5px 5px #6a6a6a4d;
-            text-decoration: underline;
-            font-weight: bold;
-        }
-
-        html {
-            scroll-behavior: smooth;
-
-        }
-
-
-        .arrows {
-            width: 60px;
-            height: 72px;
-            position: absolute;
-            left: 50%;
-            margin-left: -30px;
-            bottom: 20px;
-        }
-        
-        .arrows path {
-            stroke: #b8b8b8;
-            fill: transparent;
-            stroke-width: 1px;	
-            animation: arrow 2s infinite;
-            -webkit-animation: arrow 2s infinite; 
-        }
-        
-        @keyframes arrow
-        {
-        0% {opacity:0}
-        40% {opacity:1}
-        80% {opacity:0}
-        100% {opacity:0}
-        }
-        
-        @-webkit-keyframes arrow
-        {
-        0% {opacity:0}
-        40% {opacity:1}
-        80% {opacity:0}
-        100% {opacity:0}
-        }
-        
-        .arrows path.a1 {
-            animation-delay:-1s;
-            -webkit-animation-delay:-1s;
-        }
-        
-        .arrows path.a2 {
-            animation-delay:-0.5s;
-            -webkit-animation-delay:-0.5s;
-        }
-        
-        .arrows path.a3 {	
-            animation-delay:0s;
-            -webkit-animation-delay:0s;
-        }
+#topbutton:hover {
+    background-color: #555;
+}
