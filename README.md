@@ -1,6 +1,16 @@
 # etahn.ml
 
 ## How does this site run?
+- The site is running under a static site for free with render.com
+- I am using a paid domanin from domains.google.com
+- Connected to cloudflare's name servers and DNS pointed to renders server, I use cloudflare because of many of the free services and the DNS page they have is easy to manage.
+- etahn.dev
+
+
+<hr>
+<br><br><br><br><br><br>
+
+## How does this site run? - OLD
 - This site runs off of a github repository I made, https://github.com/etahn-git/git-clone-and-execute
 - Im using the docker container of that program. Which runs web server on port 3000
 - Domain is free from freenom.com
