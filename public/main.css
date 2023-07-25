@@ -21,10 +21,9 @@ html {
     flex-wrap: wrap;
     position: fixed;
     bottom: 20px;
-    right: 90px;
+    right: 20px;
     padding: 10px;
-    background-color: rgb(43, 43, 43);
-    color: black;
+    color: white;
 }
 
 .social-button {
@@ -32,7 +31,7 @@ html {
 }
 
 .icon {
-    color: rgb(31, 28, 28);
+    color: white;
     font-size: 35px;
 }
 
