@@ -1,4 +1,4 @@
-# etahn.ml
+# etahn.dev
 
 ## How does this site run?
 - The site is running under a static site for free with render.com
