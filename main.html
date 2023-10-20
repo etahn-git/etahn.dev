@@ -20,7 +20,7 @@
 
     <div class="main">
         <div>
-            <h1 class="maintext">Ethan - 14 year old developer</h1>
+            <h1 class="maintext">Ethan - <a id="result"></a> year old developer</h1>
         </div>
         <div class="break-flexbox buttons">
             <div><button class="button-style"><a class="button" href="https://github.com/etahn-git">Portforlio</a></button></div>
@@ -61,6 +61,21 @@
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
         }
+
+        var startDate = new Date("2009-08-17T00:00:00Z");
+
+        function calculateYearsElapsed() {
+            var currentTime = new Date();
+            var yearsDifference = currentTime.getFullYear() - startDate.getFullYear();
+
+            if (currentTime.getMonth() < startDate.getMonth() || (currentTime.getMonth() === startDate.getMonth() && currentTime.getDate() < startDate.getDate())) {
+                yearsDifference--;
+            }
+
+            var resultElement = document.getElementById("result");
+            resultElement.textContent = yearsDifference;
+        }
+        calculateYearsElapsed();
     </script>
 
 </body>
